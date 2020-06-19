@@ -15,7 +15,8 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "laravel/nova": "*",
-       " optimistdigital/nova-blog": "^9.1"
+        "optimistdigital/nova-blog": "^9.1",
+        "whitecube/nova-flexible-content" :"^0.2.23"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
