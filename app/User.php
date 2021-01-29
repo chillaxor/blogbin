@@ -1,10 +1,18 @@
 <?php
+/*
+ * @Author: jinzhi
+ * @email: <chenxinbin@linghit.com>
+ * @Date: 2020-11-23 09:10:39
+ * @Description: Description
+ */
 
 namespace App;
 
+
+use App\UserRelation;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -36,4 +44,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function relations()
+    {
+        return $this->hasMany(UserRelation::class, 'user_id', 'id');
+    }
+
 }
