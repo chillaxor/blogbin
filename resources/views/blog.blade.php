@@ -110,7 +110,7 @@
         //   });
         // });
         layui.use('layim', function(layim) {
-            var socket = new WebSocket('ws://nova8.com//ws');
+            var socket = new WebSocket('ws://bin.zekrom.cn//ws');
             console.log(socket.readyState);
             //== WebSocket.OPEN
             //   socket.send('Hi Server, I am LayIM!');
